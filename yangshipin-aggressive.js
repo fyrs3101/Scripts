@@ -14,6 +14,14 @@ let body = $response.body;
 if (body) {
   try {
     let obj = JSON.parse(body);
+    let obj;
+try {
+    obj = JSON.parse(body || '{}');
+} catch (e) {
+    console.log("JSON 解析失败:", e, "原始body前100:", body?.slice(0,100));
+    $done({body});
+    return;
+}
 
     // ─────────────── 通用暴力覆盖 ───────────────
     if (obj.data) {
