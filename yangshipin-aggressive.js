@@ -1,8 +1,8 @@
 [mitm]
 hostname = *.yangshipin.cn, *.ysp.cntv.cn, *.cntv.cn, *.cbox.cntv.cn
 [rewrite_local]
-^https?://.*\.(yangshipin|cbox)\.cntv\.cn url script-response-body https://raw.githubusercontent.com/fyrs3101/main/yangshipin-aggressive.js
-^https?://.*\.yangshipin\.cn url script-response-body https://raw.githubusercontent.com/fyrs3101/main/yangshipin-aggressive.js
+^https?://.*\.(yangshipin|cbox)\.cntv\.cn url script-response-body https://raw.githubusercontent.com/fyrs3101/Scripts/refs/heads/master/yangshipin-aggressive.js
+^https?://.*\.yangshipin\.cn url script-response-body https://raw.githubusercontent.com/fyrs3101/Scripts/refs/heads/master/yangshipin-aggressive.js
 // 激进版央视频解锁 - Quantumult X / Surge(MITM+Script) / Loon
 // 目标：尽可能强制解锁超清、4K、会员专享、付费点播、回看等
 // 最后更新参考时间：2026年初可能仍部分有效，实际请抓包验证字段名
