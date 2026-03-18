@@ -2,7 +2,7 @@
 hostname = *.yangshipin.cn, *.cctv.cn
 [rewrite_local]
 # 会员解锁
-^https?:\/\/mobile\.yangshipin\.cn\/vapi\/user\/vip url script-response-body https://raw.githubusercontent.com/Moli-X/Resources/main/Script/yangshipin.js
+^https?:\/\/mobile\.yangshipin\.cn\/vapi\/user\/vip url script-response-body https://raw.githubusercontent.com/fyrs3101/Scripts/refs/heads/master/yangshipin.js
 # 广告去除
 ^https?:\/\/ads\.yangshipin\.cn\/.+ url reject
 let obj = JSON.parse($response.body);
